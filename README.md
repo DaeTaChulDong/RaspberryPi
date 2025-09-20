@@ -2,6 +2,8 @@
 
 # 센서와 모듈
 
+import RPi.GPIO as GPIO  //센서 제이용 GPIO 모듈
+
 import time //time 모듈
 
 import board //데이터 송신용 board 모듈
