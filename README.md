@@ -27,6 +27,17 @@ while True:
     print("Exit with ^C.")
     exit()
 
+# 피에조 센서
+
+import RPi.GPIO as GPIO
+
+from time import sleep
+
+GPIO.setwarnings(False)  //오류코드 제거
+GPIO.setmode(GPIO.BCM)  //BCM 형태로 핀 조회
+buzzer=17  //GPIO 17번 핀 사용
+GPIO.setup(buzzer,GPIO.OUT)  //아웃풋으로 정의
+
 ---
 # GPIO control code
 
